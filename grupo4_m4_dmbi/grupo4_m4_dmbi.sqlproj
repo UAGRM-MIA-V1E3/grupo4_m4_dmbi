@@ -59,4 +59,19 @@
     <Folder Include="Schema" />
     <Folder Include="Schema\Tables" />
   </ItemGroup>
+  <ItemGroup>
+    <Build Include="Schema\Tables\Customers.sql" />
+    <Build Include="Schema\Tables\Suppliers.sql" />
+    <Build Include="Schema\Tables\Categories.sql" />
+    <Build Include="Schema\Tables\Products.sql" />
+    <Build Include="Schema\Tables\Orders.sql" />
+    <Build Include="Schema\Tables\Employees.sql" />
+    <Build Include="Schema\Tables\Shippers.sql" />
+    <Build Include="Schema\Tables\CustomerCustomerDemo.sql" />
+    <Build Include="Schema\Tables\CustomerDemographics.sql" />
+    <Build Include="Schema\Tables\EmployeesTerritories.sql" />
+    <Build Include="Schema\Tables\OrderDetails.sql" />
+    <Build Include="Schema\Tables\Region.sql" />
+    <Build Include="Schema\Tables\Territories.sql" />
+  </ItemGroup>
 </Project>
