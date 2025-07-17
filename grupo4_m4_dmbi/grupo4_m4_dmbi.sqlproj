@@ -58,6 +58,9 @@
     <Folder Include="Properties" />
     <Folder Include="Schema" />
     <Folder Include="Schema\Tables" />
+    <Folder Include="Schema\Programability" />
+    <Folder Include="Schema\Security" />
+    <Folder Include="Schema\Scripts" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schema\Tables\Customers.sql" />
