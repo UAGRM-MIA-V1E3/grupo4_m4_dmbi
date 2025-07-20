@@ -70,9 +70,12 @@
     <Build Include="Schemas\dbo\DimShipper.sql" />
     <Build Include="Schemas\dbo\DimDate.sql" />
     <Build Include="Schemas\dbo\DimShipInfo.sql" />
-    <Build Include="Schemas\dbo\FactSales.sql" />
+    <Build Include="Schemas\dbo\FactOrders.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="NortwindDW.refactorlog" />
   </ItemGroup>
 </Project>

@@ -1,14 +1,18 @@
 ﻿CREATE TABLE [dbo].[DimDate]
 (
-	date_key BIGINT IDENTITY(1,1) NOT NULL ,
-    full_date DATE,
-    year INT,
-    quarter INT,
-    quarter_name VARCHAR(20),
-    month INT,
-    month_name VARCHAR(20),
-    week INT,
-    day INT,
-    day_name VARCHAR(9), 
-    CONSTRAINT [PK_DimDate] PRIMARY KEY ([date_key])
-)
+	[DateKey] [int] NOT NULL  CONSTRAINT [PK_DimDate] PRIMARY KEY,
+    [FullDate] [DATE] NOT NULL ,
+    [DayNumberOfWeek] [tinyint] NOT NULL,
+	[DayNameOfWeek] [nvarchar](10) NOT NULL,
+	[DayNumberOfMonth] [tinyint] NOT NULL,
+	[DayNumberOfYear] [smallint] NOT NULL,
+	[WeekNumberOfYear] [tinyint] NOT NULL,
+	[MonthName] [nvarchar](10) NOT NULL,
+	[MonthNumberOfYear] [tinyint] NOT NULL,
+	[CalendarQuarter] [tinyint] NOT NULL,
+	[CalendarYear] [smallint] NOT NULL,
+	[CalendarSemester] [tinyint] NOT NULL,
+	[IsWeekend] BIT NULL, 
+    [IsHoliday] BIT NULL    
+);
+GO
