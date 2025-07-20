@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>grupo4_m4_dmbi</Name>
+    <Name>NorthWindOLTP</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{93cdee15-5454-44c0-a04c-2efb7259942e}</ProjectGuid>
@@ -61,6 +61,7 @@
     <Folder Include="Schema\Programability" />
     <Folder Include="Schema\Security" />
     <Folder Include="Schema\Scripts" />
+    <Folder Include="Schema\Programability\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schema\Tables\Customers.sql" />
@@ -76,5 +77,6 @@
     <Build Include="Schema\Tables\OrderDetails.sql" />
     <Build Include="Schema\Tables\Region.sql" />
     <Build Include="Schema\Tables\Territories.sql" />
+    <Build Include="Schema\Programability\Stored Procedures\GetDatabaseRowVersion.sql" />
   </ItemGroup>
 </Project>

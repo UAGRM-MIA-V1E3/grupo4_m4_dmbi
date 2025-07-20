@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36301.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "grupo4_m4_dmbi", "grupo4_m4_dmbi\grupo4_m4_dmbi.sqlproj", "{93CDEE15-5454-44C0-A04C-2EFB7259942E}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "NorthWindOLTP", "grupo4_m4_dmbi\NorthWindOLTP.sqlproj", "{93CDEE15-5454-44C0-A04C-2EFB7259942E}"
 EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "NortwindDW", "grupo4_m4_dmbi\NortwindDW\NortwindDW.sqlproj", "{8010F6D0-D60A-4AD3-888D-72F916B7D58E}"
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "NorthWindDW", "grupo4_m4_dmbi\NortwindDW\NorthWindDW.sqlproj", "{8010F6D0-D60A-4AD3-888D-72F916B7D58E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
