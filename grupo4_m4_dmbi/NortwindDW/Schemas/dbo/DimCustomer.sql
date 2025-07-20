@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[DimCustomer]
 (
-	[CustomerKey] [int] IDENTITY(1,1) NOT NULL CONSTRAINT [PK_DimCustomer] PRIMARY KEY,
+	[CustomerSK] [int] IDENTITY(1,1) NOT NULL CONSTRAINT [PK_DimCustomer] PRIMARY KEY,
     [CustomerID] [nchar](5) NOT NULL,
 	[CompanyName] [nvarchar](40) NOT NULL,
 	[ContactName] [nvarchar](30) NULL,

@@ -66,10 +66,8 @@
     <Build Include="Schemas\dbo\DimCustomer.sql" />
     <Build Include="Schemas\dbo\DimProduct.sql" />
     <Build Include="Schemas\dbo\DimEmployee.sql" />
-    <Build Include="Schemas\dbo\DimSupplier.sql" />
     <Build Include="Schemas\dbo\DimShipper.sql" />
     <Build Include="Schemas\dbo\DimDate.sql" />
-    <Build Include="Schemas\dbo\DimShipInfo.sql" />
     <Build Include="Schemas\dbo\FactOrders.sql" />
     <Build Include="Schemas\Staging\StagingCustomer.sql" />
   </ItemGroup>

@@ -1,14 +1,14 @@
 ﻿CREATE TABLE [dbo].[FactOrders]
 (
-    OrderKey [int] IDENTITY(1,1) NOT NULL  CONSTRAINT [PK_FactOrders] PRIMARY KEY,
+    OrderSK [int] IDENTITY(1,1) NOT NULL  CONSTRAINT [PK_FactOrders] PRIMARY KEY,
     [OrderID] [int] NOT NULL,
-    [ProductKey] [int] NOT NULL,
-	[CustomerKey] [int] NULL,
-	[EmployeeKey] [int] NULL,
-    [ShipperKey] [int] NULL,
-	[OrderDateKey] [int] NULL,
-	[RequiredDateKey] [int] NULL,
-	[ShippedDateKey] [int] NULL,
+    [ProductSK] [int] NOT NULL,
+	[CustomerSK] [int] NULL,
+	[EmployeeSK] [int] NULL,
+    [ShipperSK] [int] NULL,
+	[OrderDateSK] [int] NULL,
+	[RequiredDateSK] [int] NULL,
+	[ShippedDateSK] [int] NULL,
 	[OrderDate] [datetime] NULL,
 	[RequiredDate] [datetime] NULL,
 	[ShippedDate] [datetime] NULL,
@@ -26,24 +26,24 @@
 );
 GO
 
-ALTER TABLE [dbo].[FactOrders] ADD CONSTRAINT [FK_DimCustomer] FOREIGN KEY([CustomerKey]) REFERENCES [dbo].[DimCustomer] ([CustomerKey]);
+ALTER TABLE [dbo].[FactOrders] ADD CONSTRAINT [FK_DimCustomer] FOREIGN KEY([CustomerSK]) REFERENCES [dbo].[DimCustomer] ([CustomerSK]);
 GO
 
-ALTER TABLE [dbo].[FactOrders] ADD CONSTRAINT [FK_DimDate_OrderDate] FOREIGN KEY([OrderDateKey]) REFERENCES [dbo].[DimDate] ([DateKey]);
+ALTER TABLE [dbo].[FactOrders] ADD CONSTRAINT [FK_DimDate_OrderDate] FOREIGN KEY([OrderDateSK]) REFERENCES [dbo].[DimDate] ([DateSK]);
 GO
 
-ALTER TABLE [dbo].[FactOrders] ADD CONSTRAINT [FK_DimDate_RequiredDate] FOREIGN KEY([RequiredDateKey]) REFERENCES [dbo].[DimDate] ([DateKey]);
+ALTER TABLE [dbo].[FactOrders] ADD CONSTRAINT [FK_DimDate_RequiredDate] FOREIGN KEY([RequiredDateSK]) REFERENCES [dbo].[DimDate] ([DateSK]);
 GO
 
-ALTER TABLE [dbo].[FactOrders] ADD CONSTRAINT [FK_DimDate_ShippedDate] FOREIGN KEY([ShippedDateKey]) REFERENCES [dbo].[DimDate] ([DateKey]);
+ALTER TABLE [dbo].[FactOrders] ADD CONSTRAINT [FK_DimDate_ShippedDate] FOREIGN KEY([ShippedDateSK]) REFERENCES [dbo].[DimDate] ([DateSK]);
 GO
 
-ALTER TABLE [dbo].[FactOrders] ADD CONSTRAINT [FK_DimProduct] FOREIGN KEY([ProductKey]) REFERENCES [dbo].[DimProduct] ([ProductKey]);
+ALTER TABLE [dbo].[FactOrders] ADD CONSTRAINT [FK_DimProduct] FOREIGN KEY([ProductSK]) REFERENCES [dbo].[DimProduct] ([ProductSK]);
 GO
 
-ALTER TABLE [dbo].[FactOrders] ADD CONSTRAINT [FK_DimEmployee] FOREIGN KEY([EmployeeKey]) REFERENCES [dbo].[DimEmployee] ([EmployeeKey]);
+ALTER TABLE [dbo].[FactOrders] ADD CONSTRAINT [FK_DimEmployee] FOREIGN KEY([EmployeeSK]) REFERENCES [dbo].[DimEmployee] ([EmployeeSK]);
 GO
 
-ALTER TABLE [dbo].[FactOrders] ADD CONSTRAINT [FK_DimShipper] FOREIGN KEY([ShipperKey]) REFERENCES [dbo].[DimShipper] ([ShipperKey]);
+ALTER TABLE [dbo].[FactOrders] ADD CONSTRAINT [FK_DimShipper] FOREIGN KEY([ShipperSK]) REFERENCES [dbo].[DimShipper] ([ShipperSK]);
 GO
 
