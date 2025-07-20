@@ -70,6 +70,10 @@
     <Build Include="Schemas\dbo\DimDate.sql" />
     <Build Include="Schemas\dbo\FactOrders.sql" />
     <Build Include="Schemas\Staging\StagingCustomer.sql" />
+    <Build Include="Schemas\Staging\StagingEmployee.sql" />
+    <Build Include="Schemas\Staging\StagingProduct.sql" />
+    <Build Include="Schemas\Staging\StagingSupplier.sql" />
+    <Build Include="Schemas\Staging\stagingFactOrders.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
