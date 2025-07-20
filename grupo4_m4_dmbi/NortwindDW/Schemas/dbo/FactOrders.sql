@@ -16,7 +16,6 @@
 	[Quantity] [smallint] NOT NULL,
 	[Discount] [real] NOT NULL,
     [Freight] [money] NULL,
-    [LineTotal] [real] NOT NULL,
 	[ShipName] [nvarchar](40) NULL,
 	[ShipAddress] [nvarchar](60) NULL,
 	[ShipCity] [nvarchar](15) NULL,
