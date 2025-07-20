@@ -71,6 +71,7 @@
     <Build Include="Schemas\dbo\DimDate.sql" />
     <Build Include="Schemas\dbo\DimShipInfo.sql" />
     <Build Include="Schemas\dbo\FactOrders.sql" />
+    <Build Include="Schemas\Staging\StagingCustomer.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />

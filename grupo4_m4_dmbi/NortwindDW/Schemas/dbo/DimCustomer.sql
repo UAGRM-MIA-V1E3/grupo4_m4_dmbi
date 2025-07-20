@@ -12,7 +12,7 @@
 	[Country] [nvarchar](15) NULL,
 	[Phone] [nvarchar](24) NULL,
 	[Fax] [nvarchar](24) NULL,
-	[CustomerTypeDescription ]  [nvarchar](max) NULL
+	[CustomerTypeDescription] [nvarchar](max) NULL
     );
 	GO
 
