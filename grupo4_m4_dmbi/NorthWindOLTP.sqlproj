@@ -3,16 +3,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>NortwindDW</Name>
+    <Name>NorthWindOLTP</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{8010f6d0-d60a-4ad3-888d-72f916b7d58e}</ProjectGuid>
+    <ProjectGuid>{93cdee15-5454-44c0-a04c-2efb7259942e}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>NortwindDW</RootNamespace>
-    <AssemblyName>NortwindDW</AssemblyName>
+    <RootNamespace>grupo4_m4_dmbi</RootNamespace>
+    <AssemblyName>grupo4_m4_dmbi</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
@@ -56,26 +56,27 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="Schemas" />
-    <Folder Include="Schemas\Staging" />
-    <Folder Include="Schemas\dbo" />
-    <Folder Include="Scripts" />
-    <Folder Include="Schemas\dbo\Scripts" />
+    <Folder Include="Schema" />
+    <Folder Include="Schema\Tables" />
+    <Folder Include="Schema\Programability" />
+    <Folder Include="Schema\Security" />
+    <Folder Include="Schema\Scripts" />
+    <Folder Include="Schema\Programability\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="Schemas\dbo\DimCustomer.sql" />
-    <Build Include="Schemas\dbo\DimProduct.sql" />
-    <Build Include="Schemas\dbo\DimEmployee.sql" />
-    <Build Include="Schemas\dbo\DimSupplier.sql" />
-    <Build Include="Schemas\dbo\DimShipper.sql" />
-    <Build Include="Schemas\dbo\DimDate.sql" />
-    <Build Include="Schemas\dbo\DimShipInfo.sql" />
-    <Build Include="Schemas\dbo\FactOrders.sql" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="README.md" />
-  </ItemGroup>
-  <ItemGroup>
-    <RefactorLog Include="NortwindDW.refactorlog" />
+    <Build Include="Schema\Tables\Customers.sql" />
+    <Build Include="Schema\Tables\Suppliers.sql" />
+    <Build Include="Schema\Tables\Categories.sql" />
+    <Build Include="Schema\Tables\Products.sql" />
+    <Build Include="Schema\Tables\Orders.sql" />
+    <Build Include="Schema\Tables\Employees.sql" />
+    <Build Include="Schema\Tables\Shippers.sql" />
+    <Build Include="Schema\Tables\CustomerCustomerDemo.sql" />
+    <Build Include="Schema\Tables\CustomerDemographics.sql" />
+    <Build Include="Schema\Tables\EmployeesTerritories.sql" />
+    <Build Include="Schema\Tables\OrderDetails.sql" />
+    <Build Include="Schema\Tables\Region.sql" />
+    <Build Include="Schema\Tables\Territories.sql" />
+    <Build Include="Schema\Programability\Stored Procedures\GetDatabaseRowVersion.sql" />
   </ItemGroup>
 </Project>
