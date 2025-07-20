@@ -78,5 +78,6 @@
     <Build Include="Schema\Tables\Region.sql" />
     <Build Include="Schema\Tables\Territories.sql" />
     <Build Include="Schema\Programability\Stored Procedures\GetDatabaseRowVersion.sql" />
+    <Build Include="Schema\Programability\Stored Procedures\GetCustomersChangesByRowVersion.sql" />
   </ItemGroup>
 </Project>
