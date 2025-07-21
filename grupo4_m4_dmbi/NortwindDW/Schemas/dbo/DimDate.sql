@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[DimDate]
 (
-	[DateKey] [int] NOT NULL  CONSTRAINT [PK_DimDate] PRIMARY KEY,
+	[DateSK] [int] NOT NULL  CONSTRAINT [PK_DimDate] PRIMARY KEY,
     [FullDate] [DATE] NOT NULL ,
     [DayNumberOfWeek] [tinyint] NOT NULL,
 	[DayNameOfWeek] [nvarchar](10) NOT NULL,

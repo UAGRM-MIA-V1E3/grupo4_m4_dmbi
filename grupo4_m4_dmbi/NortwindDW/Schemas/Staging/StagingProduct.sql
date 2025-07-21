@@ -1,8 +1,7 @@
-﻿CREATE TABLE [dbo].[DimProduct]
-(
-	ProductSK [int] IDENTITY(1,1) NOT NULL CONSTRAINT [PK_DimProduct] PRIMARY KEY ,
-    [ProductID] [int] NOT NULL,
-	[ProductName] [nvarchar](40) NOT NULL,
+﻿CREATE TABLE [dbo].[StagingProduct]
+(	
+    [ProductSK] [int] NOT NULL,
+    [ProductName] [nvarchar](40) NOT NULL,
 	[SupplierID] [int] NULL,
 	[CategoryID] [int] NULL,
 	[QuantityPerUnit] [nvarchar](20) NULL,
@@ -17,3 +16,4 @@
 	[SupplierContactName] [nvarchar](30) NULL,
 );
 GO
+

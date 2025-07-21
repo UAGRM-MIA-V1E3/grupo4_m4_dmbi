@@ -61,20 +61,19 @@
     <Folder Include="Schemas\dbo" />
     <Folder Include="Scripts" />
     <Folder Include="Schemas\dbo\Scripts" />
-    <Folder Include="Schemas\Programability" />
-    <Folder Include="Schemas\Programability\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schemas\dbo\DimCustomer.sql" />
     <Build Include="Schemas\dbo\DimProduct.sql" />
     <Build Include="Schemas\dbo\DimEmployee.sql" />
-    <Build Include="Schemas\dbo\DimSupplier.sql" />
     <Build Include="Schemas\dbo\DimShipper.sql" />
     <Build Include="Schemas\dbo\DimDate.sql" />
-    <Build Include="Schemas\dbo\DimShipInfo.sql" />
     <Build Include="Schemas\dbo\FactOrders.sql" />
     <Build Include="Schemas\Staging\StagingCustomer.sql" />
-    <Build Include="Schemas\Programability\Stored Procedures\DW_MergenDimCustomer.sql" />
+    <Build Include="Schemas\Staging\StagingEmployee.sql" />
+    <Build Include="Schemas\Staging\StagingProduct.sql" />
+    <Build Include="Schemas\Staging\StagingSupplier.sql" />
+    <Build Include="Schemas\Staging\stagingFactOrders.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
