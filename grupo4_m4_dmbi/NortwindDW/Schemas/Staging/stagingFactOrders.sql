@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[stagingFactOrders]
+﻿CREATE TABLE [dbo].[StagingFactOrders]
 (
 	[Order] [INT] NOT NULL,
 	[ProductKey] [INT] NOT NULL,
