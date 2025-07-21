@@ -1,17 +1,15 @@
 ﻿CREATE TABLE [dbo].[StagingCustomer]
 (
-	[customerSK] [int] NOT NULL,
-	[customerid] [nchar](5) NOT NULL,
-	[companyname] [nvarchar](40) NOT NULL,
-	[contactname] [nvarchar](30) NULL,
-	[contacttitle] [nvarchar](30) NULL,
-	[address] [nvarchar](60) NULL,
-	[city] [nvarchar](15) NULL,
-	[region] [nvarchar](15) NULL,
-	[postalcode] [nvarchar](10) NULL,
-	[country] [nvarchar](15) NULL,
-	[phone] [nvarchar](24) NULL,
-	[fax] [nvarchar](24) NULL,
-
+	[CustomerSK] [int] NOT NULL,
+	[CompanyName] [nvarchar](40) NOT NULL,
+	[ContactName] [nvarchar](30) NULL,
+	[ContactTitle] [nvarchar](30) NULL,
+	[Address] [nvarchar](60) NULL,
+	[City] [nvarchar](15) NULL,
+	[Region] [nvarchar](15) NULL,
+	[PostalCode] [nvarchar](10) NULL,
+	[Country] [nvarchar](15) NULL,
+	[Phone] [nvarchar](24) NULL,
+	[Fax] [nvarchar](24) NULL
 );
 GO

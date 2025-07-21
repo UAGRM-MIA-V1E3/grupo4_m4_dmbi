@@ -1,25 +1,21 @@
-﻿CREATE TABLE [dbo].[StagintEmployee]
+﻿CREATE TABLE [dbo].[StagingEmployee]
 (
 	[EmployeeSK] [int] NOT NULL,
-	[LastName] [varchar](20) NOT NULL,
-	[FirstName] [varchar](10) NOT NULL,
-	[Title] [varchar](30) NULL,
-	[TitleOfCourtesy] [varchar](25) NULL,
+	[LastName] [nvarchar](20) NOT NULL,
+	[FirstName] [nvarchar](10) NOT NULL,
+	[Title] [nvarchar](30) NULL,
+	[TitleOfCourtesy] [nvarchar](25) NULL,
 	[BirthDate] [datetime] NULL,
 	[HireDate] [datetime] NULL,
-	[Address] [varchar](60) NULL,
-	[City] [varchar](15) NULL,
-	[Region] [varchar](15) NULL,
-	[PostalCode] [varchar](10) NULL,
-	[Country] [varchar](15) NULL,
-	[HomePhone] [varchar](24) NULL,
-	[Extension] [varchar](4) NULL,
+	[Address] [nvarchar](60) NULL,
+	[City] [nvarchar](15) NULL,
+	[Region] [nvarchar](15) NULL,
+	[PostalCode] [nvarchar](10) NULL,
+	[Country] [nvarchar](15) NULL,
+	[HomePhone] [nvarchar](24) NULL,
+	[Extension] [nvarchar](4) NULL,
 	[Photo] [image] NULL,
-	[Notes] [varchar](max) NULL,
-	[ReportsTo] [int] NULL,
-
-
-
-
-
-)
+	[Notes] [nvarchar](max) NULL,
+	[ReportsTo] [int] NULL
+);
+GO

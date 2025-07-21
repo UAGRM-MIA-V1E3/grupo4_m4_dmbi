@@ -1,24 +1,25 @@
 ﻿CREATE TABLE [dbo].[StagingFactOrders]
-(
-	[Order] [INT] NOT NULL,
-	[ProductKey] [INT] NOT NULL,
-	[CustomerKey] [INT] NULL,
-	[EmployeeKey] [INT] NULL,
-	[ShipperKey] [INT] NULL,
-	[OrderDateKey] [INT] NULL,
-	[RequiredDateKey] [INT] NULL,
-	[ShippedDateKey] [INT] NULL,
-	[OrderDate] [DATETIME] NULL,
-	[RequiredDate] [DATETIME] NULL,
-	[ShippedDate] [DATETIME] NULL,
-	[UnitPrice] [MONEY] NOT NULL,
-	[Quantity] [SMALLINT] NOT NULL,
-	[Discount] [REAL] NOT NULL,
-	[Freight] [MONEY] NULL,
-	[ShipName] [NVARCHAR](40) NULL,
-	[ShipAddress] [NVARCHAR](60) NULL,
-	[ShipCity] [NVARCHAR](15) NULL,
-	[ShipRegion] [NVARCHAR](15) NULL,
-	[ShipPostalCode] [NVARCHAR](10) NULL,
-	[ShipCountry] [NVARCHAR](15) NULL
-)
+(	
+	[OrderSK] [int] NOT NULL,
+	[ProductSK] [int] NOT NULL,
+	[CustomerSK] [int] NULL,
+	[EmployeeSK] [int] NULL,
+    [ShipperSK] [int] NULL,
+	[OrderDateSK] [int] NULL,
+	[RequiredDateSK] [int] NULL,
+	[ShippedDateSK] [int] NULL,
+	[OrderDate] [datetime] NULL,
+	[RequiredDate] [datetime] NULL,
+	[ShippedDate] [datetime] NULL,
+    [UnitPrice] [money] NOT NULL,
+	[Quantity] [smallint] NOT NULL,
+	[Discount] [real] NOT NULL,
+    [Freight] [money] NULL,
+	[ShipName] [nvarchar](40) NULL,
+	[ShipAddress] [nvarchar](60) NULL,
+	[ShipCity] [nvarchar](15) NULL,
+	[ShipRegion] [nvarchar](15) NULL,
+	[ShipPostalCode] [nvarchar](10) NULL,
+	[ShipCountry] [nvarchar](15) NULL
+);
+GO

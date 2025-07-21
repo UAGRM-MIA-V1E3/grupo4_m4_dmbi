@@ -1,19 +1,19 @@
-﻿CREATE TABLE [dbo].[StagintDimProduct]
-(
-	[productSK]    [int]            NOT NULL,
-	[ProductName]  [varchar](40)   NOT NULL,
-	[Supplierid]   [int]            NULL,
-	[Categoryid]   [int]            NULL,
-	[Quantityperunit] [varchar](20) NULL,
-	[Unitprice]    [money]         NULL,
-	[Unitsinstock] [smallint]     NULL,
-	[Unitsonorder] [smallint]     NULL,
-	[Reorderlevel] [smallint]     NULL,
-	[Discontinued]  [bit]           NOT NULL,
-	[CategoryName] [varchar](15)   NULL,
-	[Categorydescription] [varchar](max) NULL,
-	[SuppliercompanyName] [varchar](40) NULL,
-	[SuppliercontactName] [varchar](30) NULL,
+﻿CREATE TABLE [dbo].[StagingProduct]
+(	
+    [ProductSK] [int] NOT NULL,
+    [ProductName] [nvarchar](40) NOT NULL,
+	[SupplierID] [int] NULL,
+	[CategoryID] [int] NULL,
+	[QuantityPerUnit] [nvarchar](20) NULL,
+	[UnitPrice] [money] NULL,
+	[UnitsInStock] [smallint] NULL,
+	[UnitsOnOrder] [smallint] NULL,
+	[ReorderLevel] [smallint] NULL,
+	[Discontinued] [bit] NOT NULL,
+	[CategoryName] [nvarchar](15)  NULL,
+	[CategoryDescription] [nvarchar](max) NULL,
+	[SupplierCompanyName] [nvarchar](40)  NULL,
+	[SupplierContactName] [nvarchar](30) NULL,
 );
 GO
 

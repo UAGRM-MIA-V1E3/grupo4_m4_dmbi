@@ -78,6 +78,10 @@
     <Build Include="Schema\Tables\Region.sql" />
     <Build Include="Schema\Tables\Territories.sql" />
     <Build Include="Schema\Programability\Stored Procedures\GetDatabaseRowVersion.sql" />
-    <Build Include="Schema\Programability\Stored Procedures\GetCustomersChangesByRowVersion.sql" />
+    <Build Include="Schema\Programability\Stored Procedures\GetCustomerChangesByRowVersion.sql" />
+    <Build Include="Schema\Programability\Stored Procedures\GetEmployeeChangesByRowVersion.sql" />
+    <Build Include="Schema\Programability\Stored Procedures\GetProductChangesByRowVersion.sql" />
+    <Build Include="Schema\Programability\Stored Procedures\GetShipperChangesByRowVersion.sql" />
+    <Build Include="Schema\Programability\Stored Procedures\GetOrderChangesByRowVersion.sql" />
   </ItemGroup>
 </Project>
