@@ -61,6 +61,8 @@
     <Folder Include="Schemas\dbo" />
     <Folder Include="Scripts" />
     <Folder Include="Schemas\dbo\Scripts" />
+    <Folder Include="Schemas\Programability" />
+    <Folder Include="Schemas\Programability\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schemas\dbo\DimCustomer.sql" />
@@ -72,6 +74,7 @@
     <Build Include="Schemas\dbo\DimShipInfo.sql" />
     <Build Include="Schemas\dbo\FactOrders.sql" />
     <Build Include="Schemas\Staging\StagingCustomer.sql" />
+    <Build Include="Schemas\Programability\Stored Procedures\DW_MergenDimCustomer.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
