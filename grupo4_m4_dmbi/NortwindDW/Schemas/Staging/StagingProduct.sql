@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[StagintDimProduct]
+﻿CREATE TABLE [dbo].[StagintProduct]
 (
 	[productSK]    [int]            NOT NULL,
 	[ProductName]  [varchar](40)   NOT NULL,
