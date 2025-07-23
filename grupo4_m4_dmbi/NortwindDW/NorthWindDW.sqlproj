@@ -80,9 +80,13 @@
     <Build Include="Schemas\Programmability\Stored Procedures\DW_MergeDimShipper.sql" />
     <Build Include="Schemas\Programmability\Stored Procedures\DW_MergeDimEmployee.sql" />
     <Build Include="Schemas\Programmability\Stored Procedures\DW_MergeFactOrders.sql" />
+    <Build Include="Schemas\dbo\PackageConfig.sql" />
+    <Build Include="Schemas\Programmability\Stored Procedures\GetLastPackageRowVersion.sql" />
+    <Build Include="Schemas\Programmability\Stored Procedures\UpdateLastPackageRowVersion.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
+    <None Include="Scripts\InsertPackageConfig.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="NortwindDW.refactorlog" />
