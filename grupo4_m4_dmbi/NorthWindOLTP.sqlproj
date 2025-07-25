@@ -84,4 +84,10 @@
     <Build Include="Schema\Programability\Stored Procedures\GetShipperChangesByRowVersion.sql" />
     <Build Include="Schema\Programability\Stored Procedures\GetOrderChangesByRowVersion.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="NorthWindOLTP.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NorthWindOLTP.publish.xml" />
+  </ItemGroup>
 </Project>

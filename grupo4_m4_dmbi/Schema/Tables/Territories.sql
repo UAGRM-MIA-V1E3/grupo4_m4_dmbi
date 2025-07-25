@@ -6,4 +6,5 @@
  CONSTRAINT [PK_Territories] PRIMARY KEY NONCLUSTERED 
 (
 	[TerritoryID] ASC
-))
+), 
+    CONSTRAINT [FK_Territories_ToTable] FOREIGN KEY ([RegionID]) REFERENCES [dbo].[Region] ([RegionID]))

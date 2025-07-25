@@ -2,6 +2,7 @@
 	[OrderID] [int] IDENTITY(1,1) NOT NULL,
 	[CustomerID] [nchar](5) NULL,
 	[EmployeeID] [int] NULL,
+	[ShipperID] [int] null,
 	[OrderDate] [datetime] NULL,
 	[RequiredDate] [datetime] NULL,
 	[ShippedDate] [datetime] NULL,
@@ -17,4 +18,7 @@
  CONSTRAINT [PK_Orders] PRIMARY KEY CLUSTERED 
 (
 	[OrderID] ASC
-))
+),
+FOREIGN KEY (EmployeeID) REFERENCES Employees (EmployeeID),
+    FOREIGN KEY (CustomerID) REFERENCES Customers (CustomerID),
+    FOREIGN KEY (ShipperID) REFERENCES Shippers (ShipperID))

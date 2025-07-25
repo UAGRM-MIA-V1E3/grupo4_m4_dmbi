@@ -9,4 +9,6 @@
 (
 	[OrderID] ASC,
 	[ProductID] ASC
-))
+),
+	FOREIGN KEY (OrderID) REFERENCES Orders (OrderID),
+	FOREIGN KEY (ProductID) REFERENCES Products (ProductID))

@@ -13,4 +13,7 @@
  CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED 
 (
 	[ProductID] ASC
-))
+),
+	FOREIGN KEY (CategoryID) REFERENCES Categories (CategoryID),
+	FOREIGN KEY (SupplierID) REFERENCES Suppliers (SupplierID)
+)
