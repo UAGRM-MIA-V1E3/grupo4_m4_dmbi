@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="DimShipper"
   DTS:PackageType="5"
-  DTS:VersionBuild="22"
-  DTS:VersionGUID="{846F12A1-0254-4E51-B6C1-8BBB33D78B64}">
+  DTS:VersionBuild="27"
+  DTS:VersionGUID="{E4677D4F-A1CD-439A-8EEC-203D75E9615F}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,10 +29,10 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Source.NorthWind]"
+      DTS:refId="Package.ConnectionManagers[Source.NorthWindOLTP]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{4B9F3E2A-D660-4033-A0C8-7B2F5CE1FA7E}"
-      DTS:ObjectName="Source.NorthWind">
+      DTS:ObjectName="Source.NorthWindOLTP">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
@@ -268,8 +268,8 @@
               <connections>
                 <connection
                   refId="Package\Add Shipper\Get Shipper.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Source.NorthWind]"
-                  connectionManagerRefId="Package.ConnectionManagers[Source.NorthWind]"
+                  connectionManagerID="Package.ConnectionManagers[Source.NorthWindOLTP]"
+                  connectionManagerRefId="Package.ConnectionManagers[Source.NorthWindOLTP]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>
@@ -840,7 +840,7 @@ where [refTable].[ShipperID] = ?</property>
         <NodeLayout
           Size="156.8,41.6"
           Id="Package\Add Shipper"
-          TopLeft="254.305541660913,258.844442644472" />
+          TopLeft="255.138874948715,257.977775983832" />
         <NodeLayout
           Size="186.4,41.6"
           Id="Package\Cleaun-up staging area"
@@ -889,14 +889,14 @@ where [refTable].[ShipperID] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,41.5999994214376"
+              EndConnector="0,41.5999994214379"
               Start="0,0"
-              End="0,34.0999994214376">
+              End="0,34.0999994214379">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,34.0999994214376" />
+                    End="0,34.0999994214379" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -907,18 +907,18 @@ where [refTable].[ShipperID] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 2]"
-          TopLeft="330.938875495091,213.633332137035">
+          TopLeft="331.355542138992,213.633332137035">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,45.2111105074369"
+              EndConnector="0,44.344443846797"
               Start="0,0"
-              End="0,37.7111105074369">
+              End="0,36.844443846797">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,37.7111105074369" />
+                    End="0,36.844443846797" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -929,18 +929,18 @@ where [refTable].[ShipperID] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Restricción 3]"
-          TopLeft="331.994683168532,300.444442644472">
+          TopLeft="332.411349812432,299.577775983832">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,39.3939388307177"
+              EndConnector="0,40.260605491358"
               Start="0,0"
-              End="0,31.8939388307177">
+              End="0,32.760605491358">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,31.8939388307177" />
+                    End="0,32.760605491358" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -982,7 +982,7 @@ where [refTable].[ShipperID] = ?</property>
         <NodeLayout
           Size="133.6,41.6"
           Id="Package\Add Shipper\Get Shipper"
-          TopLeft="292.499984018505,88.3999993852774" />
+          TopLeft="294.166650594109,85.7999994033575" />
         <NodeLayout
           Size="112.8,41.6"
           Id="Package\Add Shipper\Lookup"
@@ -997,18 +997,18 @@ where [refTable].[ShipperID] = ?</property>
           TopLeft="184.166656604244,302.466664563351" />
         <EdgeLayout
           Id="Package\Add Shipper.Paths[Salida de origen de OLE DB]"
-          TopLeft="356.599983881911,129.999999385277">
+          TopLeft="357.433317169713,127.399999403357">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,40.7333327607977"
+              EndConnector="0,43.3333327427175"
               Start="0,0"
-              End="0,33.2333327607977">
+              End="0,35.8333327427175">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.2333327607977" />
+                    End="0,35.8333327427175" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

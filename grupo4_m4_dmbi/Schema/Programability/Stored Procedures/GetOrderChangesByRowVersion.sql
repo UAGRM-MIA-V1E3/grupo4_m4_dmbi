@@ -6,7 +6,6 @@
 AS
 BEGIN
 	SELECT ord.OrderID
-		  ,ordtl.OrderID
 		  ,OrderDateKey = CONVERT(INT,
 							(CONVERT(CHAR(4),DATEPART(YEAR,ord.[OrderDate]))
 						  + CASE 
@@ -40,13 +39,13 @@ BEGIN
 											ELSE + CONVERT(CHAR(2),DATEPART(DAY,ord.[ShippedDate]))
 										END)))
 							END
-		  ,ordtl.[ProductID]
 		  ,ord.[CustomerID]
 		  ,ord.[EmployeeID]
-		  ,ord.ShipVia
+		  ,ord.ShipVia as ShipperID
 		  ,ord.OrderDate
 		  ,ord.RequiredDate
 		  ,ord.ShippedDate
+		  ,ordtl.ProductID
 		  ,ordtl.[UnitPrice]
 		  ,ordtl.[Quantity]
 		  ,ordtl.[Discount]

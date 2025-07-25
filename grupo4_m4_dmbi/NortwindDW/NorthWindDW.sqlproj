@@ -87,6 +87,7 @@
   <ItemGroup>
     <None Include="README.md" />
     <None Include="Scripts\InsertPackageConfig.sql" />
+    <None Include="Scripts\InsertDimDate.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="NortwindDW.refactorlog" />
