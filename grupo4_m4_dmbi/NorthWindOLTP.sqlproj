@@ -62,6 +62,7 @@
     <Folder Include="Schema\Security" />
     <Folder Include="Schema\Scripts" />
     <Folder Include="Schema\Programability\Stored Procedures" />
+    <Folder Include="Schema\DiagramER" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Schema\Tables\Customers.sql" />
@@ -89,5 +90,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="NorthWindOLTP.publish.xml" />
+    <None Include="Schema\DiagramER\EntidadRelacionNorthWindOLTP.png" />
   </ItemGroup>
 </Project>
