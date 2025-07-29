@@ -11,33 +11,33 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="DimEmployee"
   DTS:PackageType="5"
-  DTS:VersionBuild="16"
-  DTS:VersionGUID="{2376B4EF-DD6E-4CF6-8D56-28BFE4AAEA5A}">
+  DTS:VersionBuild="17"
+  DTS:VersionGUID="{A7ABB820-D2B4-46C4-A1B6-480041B814E7}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Destination.NorthWindOLTP]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{EB019BD7-35A2-469E-9346-2050D8E0B2E1}"
-      DTS:ObjectName="Destination.NorthWindOLTP">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NorthWindOLTP;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-DimEmployee-{EB019BD7-35A2-469E-9346-2050D8E0B2E1}localhost.NorthWindOLTP;Auto Translate=False;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Source.NorthWindDW]"
+      DTS:refId="Package.ConnectionManagers[Destination.NorthWindDW]"
       DTS:CreationName="OLEDB"
       DTS:DTSID="{11047B28-44BE-4595-8982-65CE2C44B593}"
-      DTS:ObjectName="Source.NorthWindDW">
+      DTS:ObjectName="Destination.NorthWindDW">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
           DTS:ConnectionString="Data Source=localhost;Initial Catalog=NorthWindDW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-DimEmployee-{11047B28-44BE-4595-8982-65CE2C44B593}localhost.NorthWindDW;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Source.NorthWindOLTP]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{EB019BD7-35A2-469E-9346-2050D8E0B2E1}"
+      DTS:ObjectName="Source.NorthWindOLTP">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NorthWindOLTP;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-DimEmployee-{EB019BD7-35A2-469E-9346-2050D8E0B2E1}localhost.NorthWindOLTP;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -135,8 +135,8 @@
               <connections>
                 <connection
                   refId="Package\Add Employee\Add New Employee.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Source.NorthWindDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[Source.NorthWindDW]"
+                  connectionManagerID="Package.ConnectionManagers[Destination.NorthWindDW]"
+                  connectionManagerRefId="Package.ConnectionManagers[Destination.NorthWindDW]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>
@@ -426,8 +426,8 @@
               <connections>
                 <connection
                   refId="Package\Add Employee\Get Employee.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Destination.NorthWindOLTP]"
-                  connectionManagerRefId="Package.ConnectionManagers[Destination.NorthWindOLTP]"
+                  connectionManagerID="Package.ConnectionManagers[Source.NorthWindOLTP]"
+                  connectionManagerRefId="Package.ConnectionManagers[Source.NorthWindOLTP]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>
@@ -882,8 +882,8 @@
               <connections>
                 <connection
                   refId="Package\Add Employee\Load staging.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Source.NorthWindDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[Source.NorthWindDW]"
+                  connectionManagerID="Package.ConnectionManagers[Destination.NorthWindDW]"
+                  connectionManagerRefId="Package.ConnectionManagers[Destination.NorthWindDW]"
                   description="La conexión de tiempo de ejecución OLE DB usada para obtener acceso a la base de datos."
                   name="OleDbConnection" />
               </connections>
@@ -1188,8 +1188,8 @@ where [refTable].[EmployeeID] = ?</property>
               <connections>
                 <connection
                   refId="Package\Add Employee\Lookup.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Source.NorthWindDW]"
-                  connectionManagerRefId="Package.ConnectionManagers[Source.NorthWindDW]"
+                  connectionManagerID="Package.ConnectionManagers[Destination.NorthWindDW]"
+                  connectionManagerRefId="Package.ConnectionManagers[Destination.NorthWindDW]"
                   description="Administrador de conexiones utilizado para obtener acceso a los datos de búsqueda."
                   name="OleDbConnection" />
               </connections>
