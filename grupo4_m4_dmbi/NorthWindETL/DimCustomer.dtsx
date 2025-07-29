@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="DimCustomer"
   DTS:PackageType="5"
-  DTS:VersionBuild="44"
-  DTS:VersionGUID="{D03A92D5-842A-4E6A-9753-F3956F4FBD11}">
+  DTS:VersionBuild="45"
+  DTS:VersionGUID="{9435BBFB-DF96-4155-985E-B98C6762C0EA}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NorthWindDW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-DimCustomer-{DA87724E-1A46-47F4-92AA-88BE72BD7BF1}localhost.NorthWindDW;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=DESKTOP-CHNA10D;Initial Catalog=NorthWindDW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-DimCustomer-{DA87724E-1A46-47F4-92AA-88BE72BD7BF1}localhost.NorthWindDW;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -37,7 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NorthWindOLTP;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-DimCustomer-{642D27F7-C282-4DA2-A9CB-99C1917EFF93}localhost.NorthWindOLTP;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=DESKTOP-CHNA10D;Initial Catalog=NorthWindOLTP;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-DimCustomer-{642D27F7-C282-4DA2-A9CB-99C1917EFF93}localhost.NorthWindOLTP;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -1204,27 +1204,27 @@ where [refTable].[CustomerID] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="144.8,41.6"
+          Size="145,42"
           Id="Package\Add Customer"
           TopLeft="302.49998347213,273.866664762232" />
         <NodeLayout
-          Size="184,41.6"
+          Size="184,42"
           Id="Package\cleaun-up staging area"
           TopLeft="286.666651003891,179.399998752475" />
         <NodeLayout
-          Size="201.6,41.6"
+          Size="202,42"
           Id="Package\Get Database RowVersion"
           TopLeft="273.333318399059,19.9333331947194" />
         <NodeLayout
-          Size="171.2,41.6"
+          Size="171,42"
           Id="Package\Get LasRowVersion"
           TopLeft="287.499984291693,93.5999993491172" />
         <NodeLayout
-          Size="160.8,41.6"
+          Size="161,42"
           Id="Package\Sync staging data"
           TopLeft="292.499984018505,351.86666421983" />
         <NodeLayout
-          Size="190.4,41.6"
+          Size="190,42"
           Id="Package\Update LastRowVersion"
           TopLeft="283.333317852683,436.799996962547" />
         <EdgeLayout
@@ -1477,7 +1477,7 @@ where [refTable].[CustomerID] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -1487,7 +1487,7 @@ where [refTable].[CustomerID] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>

@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="FactOrders"
   DTS:PackageType="5"
-  DTS:VersionBuild="69"
-  DTS:VersionGUID="{9AD7D3F0-A8A8-4A2C-9BBC-518F3DFD3B8A}">
+  DTS:VersionBuild="70"
+  DTS:VersionGUID="{EF2AB160-C090-494D-B664-A89AC62D1DA8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NorthWindDW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-FactOrders-{0DEAA508-87F3-4879-B925-9ACA51E15422}localhost.NorthWindDW;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=DESKTOP-CHNA10D;Initial Catalog=NorthWindDW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-FactOrders-{0DEAA508-87F3-4879-B925-9ACA51E15422}localhost.NorthWindDW;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -37,7 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NorthWindOLTP;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-FactOrders-{0715B175-D3A2-4E22-AB02-52B05A9F88E4}localhost.NorthWindOLTP;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=DESKTOP-CHNA10D;Initial Catalog=NorthWindOLTP;Provider=SQLOLEDB.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-FactOrders-{0715B175-D3A2-4E22-AB02-52B05A9F88E4}localhost.NorthWindOLTP;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -2206,27 +2206,27 @@ where [refTable].[ShipperID] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="131.2,41.6"
+          Size="131,42"
           Id="Package\Add Orders"
           TopLeft="308.333316486744,218.111109594394" />
         <NodeLayout
-          Size="186.4,41.6"
+          Size="186,42"
           Id="Package\Cleaun-up staging area"
           TopLeft="286.805539885192,148.777776743196" />
         <NodeLayout
-          Size="202.4,41.6"
+          Size="202,42"
           Id="Package\Get DataBase RowVersion"
           TopLeft="280.972206870578,5.05555552039986" />
         <NodeLayout
-          Size="173.6,41.6"
+          Size="174,42"
           Id="Package\Get LastRowVersion"
           TopLeft="294.44442835671,78.7222216747978" />
         <NodeLayout
-          Size="140,41.6"
+          Size="140,42"
           Id="Package\Sync Staging"
           TopLeft="305.833316623338,305.145452423511" />
         <NodeLayout
-          Size="190.4,41.6"
+          Size="190,42"
           Id="Package\Update LastRowVersion"
           TopLeft="279.999984701475,390.866663948629" />
         <EdgeLayout
