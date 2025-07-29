@@ -401,12 +401,14 @@
           {
             "name": "ProductSK",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "ProductSK",
             "sourceProviderType": "Integer"
           },
           {
             "name": "ProductID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "ProductID",
             "sourceProviderType": "Integer"
           },
@@ -419,18 +421,21 @@
           {
             "name": "SupplierID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "SupplierID",
             "sourceProviderType": "Integer"
           },
           {
             "name": "CategoryID",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "CategoryID",
             "sourceProviderType": "Integer"
           },
           {
             "name": "QuantityPerUnit",
             "dataType": "string",
+            "isHidden": true,
             "sourceColumn": "QuantityPerUnit",
             "sourceProviderType": "WChar"
           },
@@ -450,6 +455,7 @@
           {
             "name": "UnitsInStock",
             "dataType": "int64",
+            "isHidden": true,
             "sourceColumn": "UnitsInStock",
             "sourceProviderType": "SmallInt"
           },
@@ -481,6 +487,7 @@
           {
             "name": "CategoryDescription",
             "dataType": "string",
+            "isHidden": true,
             "sourceColumn": "CategoryDescription",
             "sourceProviderType": "WChar"
           },
@@ -493,6 +500,7 @@
           {
             "name": "SupplierContactName",
             "dataType": "string",
+            "isHidden": true,
             "sourceColumn": "SupplierContactName",
             "sourceProviderType": "WChar"
           }
