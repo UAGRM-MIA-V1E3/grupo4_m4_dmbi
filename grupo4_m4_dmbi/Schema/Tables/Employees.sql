@@ -21,4 +21,18 @@
  CONSTRAINT [PK_Employees] PRIMARY KEY CLUSTERED 
 (
 	[EmployeeID] ASC
-))
+)) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO
+
+ALTER TABLE [dbo].[Employees]  WITH NOCHECK ADD  CONSTRAINT [FK_Employees_Employees] FOREIGN KEY([ReportsTo])
+REFERENCES [dbo].[Employees] ([EmployeeID])
+GO
+
+ALTER TABLE [dbo].[Employees] CHECK CONSTRAINT [FK_Employees_Employees]
+GO
+
+ALTER TABLE [dbo].[Employees]  WITH NOCHECK ADD  CONSTRAINT [CK_Birthdate] CHECK  (([BirthDate]<getdate()))
+GO
+
+ALTER TABLE [dbo].[Employees] CHECK CONSTRAINT [CK_Birthdate]
+GO

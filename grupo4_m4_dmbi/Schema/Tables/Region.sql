@@ -5,4 +5,6 @@
  CONSTRAINT [PK_Region] PRIMARY KEY NONCLUSTERED 
 (
 	[RegionID] ASC
-))
+)
+) ON [PRIMARY]
+GO

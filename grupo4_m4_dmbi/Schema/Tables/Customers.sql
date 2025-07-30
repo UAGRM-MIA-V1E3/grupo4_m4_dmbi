@@ -1,5 +1,4 @@
-﻿CREATE TABLE [dbo].[Customers]
-(
+﻿CREATE TABLE [dbo].[Customers](
 	[CustomerID] [nchar](5) NOT NULL,
 	[CompanyName] [nvarchar](40) NOT NULL,
 	[ContactName] [nvarchar](30) NULL,
@@ -15,4 +14,5 @@
  CONSTRAINT [PK_Customers] PRIMARY KEY CLUSTERED 
 (
 	[CustomerID] ASC
-))
+)) ON [PRIMARY]
+GO

@@ -15,4 +15,6 @@
  CONSTRAINT [PK_Suppliers] PRIMARY KEY CLUSTERED 
 (
 	[SupplierID] ASC
-))
+)
+)
+GO
