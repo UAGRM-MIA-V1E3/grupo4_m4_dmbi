@@ -9,7 +9,7 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "NorthWindDW", "grupo4_m4_dm
 EndProject
 Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "NorthWindETL", "grupo4_m4_dmbi\NorthWindETL\NorthWindETL.dtproj", "{FE66952F-000F-CFED-65BD-7DE63F3606D6}"
 EndProject
-Project("{6870E480-7721-4708-BFB8-9AE898AA21B3}") = "NorthWindOLAP", "NorthWindOLAP\NorthWindOLAP.smproj", "{8CE414BB-95B2-4C99-9E03-51BA72086E22}"
+Project("{6870E480-7721-4708-BFB8-9AE898AA21B3}") = "NorthWindOLAP", "grupo4_m4_dmbi\NorthWindOLAP\NorthWindOLAP.smproj", "{8CE414BB-95B2-4C99-9E03-51BA72086E22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
