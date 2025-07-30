@@ -11,8 +11,8 @@
   DTS:LocaleID="3082"
   DTS:ObjectName="DimShipper"
   DTS:PackageType="5"
-  DTS:VersionBuild="28"
-  DTS:VersionGUID="{307ED387-0E35-4958-844A-66A86D69BFF8}">
+  DTS:VersionBuild="31"
+  DTS:VersionGUID="{20F4C120-880D-4300-ADD0-ECF8B2E9AD87}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -25,7 +25,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-CHNA10D;Initial Catalog=NorthWindDW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-DimShipper-{321C4168-C647-441B-9DF3-D0C670E5EF15}Destination.NorthWindDW;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NorthWindDW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-DimShipper-{321C4168-C647-441B-9DF3-D0C670E5EF15}Destination.NorthWindDW;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -37,7 +37,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=DESKTOP-CHNA10D;Initial Catalog=NorthWindOLTP;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-DimShipper-{4B9F3E2A-D660-4033-A0C8-7B2F5CE1FA7E}Source.NorthWindOLTP;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NorthWindOLTP;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-DimShipper-{4B9F3E2A-D660-4033-A0C8-7B2F5CE1FA7E}Source.NorthWindOLTP;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -1014,7 +1014,9 @@ where [refTable].[ShipperID] = ?</property>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
