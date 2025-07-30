@@ -5,4 +5,5 @@
  CONSTRAINT [PK_CustomerDemographics] PRIMARY KEY NONCLUSTERED 
 (
 	[CustomerTypeID] ASC
-))
+)) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+GO

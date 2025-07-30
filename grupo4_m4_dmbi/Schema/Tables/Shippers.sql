@@ -6,4 +6,5 @@
  CONSTRAINT [PK_Shippers] PRIMARY KEY CLUSTERED 
 (
 	[ShipperID] ASC
-))
+)) ON [PRIMARY]
+GO
