@@ -6,7 +6,7 @@
     "dataSources": [
       {
         "name": "DW",
-        "connectionString": "Provider=SQLOLEDB;Data Source=localhost;Initial Catalog=NorthWindDW;User ID=sa;Persist Security Info=false",
+        "connectionString": "Provider=SQLOLEDB;Data Source=localhost;Initial Catalog=NorthWindDW;User ID=sa;Persist Security Info=true",
         "impersonationMode": "impersonateServiceAccount",
         "annotations": [
           {
@@ -831,6 +831,18 @@
           {
             "name": "TotalNetSales",
             "expression": "SUM(Orders[NetSales])"
+          },
+          {
+            "name": "Freight Total",
+            "expression": "SUMX(VALUES(Orders[OrderID]), CALCULATE((MAX(Orders[Freight]))))"
+          },
+          {
+            "name": "TotalDiscount",
+            "expression": " SUM(Orders[Discount])"
+          },
+          {
+            "name": "AverageSale",
+            "expression": " AVERAGEX( VALUES(Orders[OrderID]),CALCULATE([TotalGrossSale]))"
           }
         ],
         "annotations": [
